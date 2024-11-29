@@ -1,0 +1,13 @@
+something
+something2
+Asi podemos
+escribir en varias lineas
+sin poner explicitamente 
+el salto de linea
+holamundoestoyescribiendounarchivo
+hola
+mundo
+estoy
+escribiendo
+un
+archivo

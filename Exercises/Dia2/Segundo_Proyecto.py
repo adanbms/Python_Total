@@ -1,0 +1,8 @@
+print("#----------- Programa que calcula las comisiones de los vendedores con base en sus ventas -----------#")
+nombre = input("Cuál es tu nombre?\n")
+ventas = input(f"Hola {nombre}, cuál es el monto de tus ventas para este mes? \n")
+print("Teniendo en cuenta un porcentaje de comisión del 13% tus resultados son:")
+comision = round(float(ventas) * 0.13, 2)
+print("-----------------------------------------------------------")
+print(f"Nombre\t\tVentas\tComisión\n{nombre}\t{ventas}\t{comision}")
+print("-----------------------------------------------------------")

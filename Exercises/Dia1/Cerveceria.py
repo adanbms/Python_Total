@@ -1,0 +1,1 @@
+print("El nombre de tu cerveza es: \n\t" + input("Dame un verbo en tercera persona: ") + " " + input("Dame el nombre de una prenda de ropa interior: ") + "\nFelicidades!!!!!!!")
