@@ -68,8 +68,9 @@ def fuente_bytes(fuente):
 puntaje = 0
 # fuente = pygame.font.Font('freesansbold.ttf',32) #Unico tipo de fuente integrada a pygame y tamaño de letra
 #Definiendo fuente externa:
-fuente_como_bytes = fuente_bytes('fuente/towerruins.ttf')#tomandola en bytes para crear .exe
-fuente = pygame.font.Font(fuente_como_bytes,32) #Unico tipo de fuente integrada a pygame y tamaño de letra
+
+#tomandola en bytes con fuente_bytes() para crear .exe
+fuente = pygame.font.Font(fuente_bytes('fuente/towerruins.ttf'),32) #Unico tipo de fuente integrada a pygame y tamaño de letra
 texto_x = 10
 texto_y = 10
 
@@ -104,7 +105,7 @@ def mostrar_puntaje(x, y):
     pantalla.blit(texto, (x,y))
 
 #TEXTO FINAL DEL JUEGO
-fuente_final = pygame.font.Font(fuente_como_bytes, 50) #utiliza fuente como bytes
+fuente_final = pygame.font.Font(fuente_bytes('fuente/towerruins.ttf'), 50) #utiliza fuente como bytes
 def texto_final():
     mi_fuente_final = fuente_final.render('GAME OVER', True, (255,255,255))
     pantalla.blit(mi_fuente_final, (250,200))
